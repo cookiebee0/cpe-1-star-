@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+int main(){
+	long long int a,b;
+	cin>>a>>b;
+	long long int x=a-b;
+	if(x<0)
+	cout<<x*-1;
+	else 
+	cout<<x;
+	return 0;
+}
