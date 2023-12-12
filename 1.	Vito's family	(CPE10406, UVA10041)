@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+  ios::sync_with_stdio(0);
+  cin.tie(0);
+  int x;
+  cin>>x;
+  cin.ignore();
+  for(int t=0;t<x;t++)
+    {
+      int a[30001];
+      int m;
+      cin>>m;
+      for(int i=0;i<m;i++)
+        {
+          cin>>a[i];
+        }
+      sort(a,a+m);
+      int mid=a[m/2],sum=0,n;
+      for(int i=0;i<m;i++)
+        {
+          n=a[i]-mid;
+          if(n<0)
+            n*=-1;
+          sum+=n;
+        }
+      cout<<sum<<endl;
+    }
+  return 0;
+}
