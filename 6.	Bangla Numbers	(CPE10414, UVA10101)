@@ -1,0 +1,49 @@
+#include <bits/stdc++.h>
+using namespace std;
+void check(long long int n)
+{
+  if(n>=10000000)
+  {
+    check(n/10000000);
+    cout<<" kuti";
+    check(n%10000000);
+  }
+  else if(n>=100000)
+  {
+    check(n/100000);
+    cout<<" lakh";
+    check(n%100000);
+  }
+  else if(n>=1000)
+  {
+    check(n/1000);
+    cout<<" hajar";
+    check(n%1000);
+  }
+  else if(n>=100)
+  {
+    check(n/100);
+    cout<<" shata";
+    check(n%100);
+  }
+  else
+  {
+    if(n!=0)
+      cout<<" "<<n;
+  }
+}
+int main() {
+  ios::sync_with_stdio(0);  cin.tie(0);
+  long long int x;
+  int c=1;
+  while(cin>>x)
+    {
+      cout<<"   "<<c<<".";
+      check(x);
+      if(x==0)
+        cout<<" "<<x;
+      cout<<'\n';
+      c++;
+    }
+  return 0;
+}
