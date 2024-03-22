@@ -1,4 +1,4 @@
-!!! all the codes was just test on zerojudge !!!
+!!! all the codes was only tested on zerojudge !!!
 
 so, you know......  ouo
 
